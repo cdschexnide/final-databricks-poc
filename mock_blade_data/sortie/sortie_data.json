@@ -1,0 +1,248 @@
+[
+  {
+    "item_id": "SORTIE-34FS-20240115-01",
+    "item_type": "training_mission",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T14:00:00Z",
+    "mission_number": "NL-24-1234",
+    "mission_type": "air_combat_training",
+    "squadron": "34th Fighter Squadron",
+    "flight_lead": "Maj Smith, Christopher A.",
+    "flight_lead_callsign": "Viper 01",
+    "aircraft": [
+      {
+        "tail_number": "87-0294",
+        "type": "F-16C",
+        "callsign": "Viper 01",
+        "pilot": "Maj Smith, Christopher A.",
+        "pilot_hours_f16": 2341,
+        "fuel_load": 7000,
+        "configuration": "2x AIM-120C, 2x AIM-9X, 1x ALQ-131"
+      },
+      {
+        "tail_number": "88-0425",
+        "type": "F-16D",
+        "callsign": "Viper 02",
+        "pilot": "Capt Johnson, Michael R.",
+        "pilot_hours_f16": 876,
+        "fuel_load": 7000,
+        "configuration": "2x AIM-120C, 2x AIM-9X, 1x ALQ-131"
+      },
+      {
+        "tail_number": "87-0332",
+        "type": "F-16C",
+        "callsign": "Viper 03",
+        "pilot": "1st Lt Davis, Sarah M.",
+        "pilot_hours_f16": 234,
+        "fuel_load": 7000,
+        "configuration": "2x AIM-120C, 2x AIM-9X, 1x ALQ-131"
+      },
+      {
+        "tail_number": "88-0520",
+        "type": "F-16C",
+        "callsign": "Viper 04",
+        "pilot": "Capt Williams, Robert T.",
+        "pilot_hours_f16": 1123,
+        "fuel_load": 7000,
+        "configuration": "2x AIM-120C, 2x AIM-9X, 1x ALQ-131"
+      }
+    ],
+    "takeoff_time": "2024-01-15T14:30:00Z",
+    "landing_time": "2024-01-15T16:00:00Z",
+    "flight_duration": "1.5 hours",
+    "airspace": "R-4806W",
+    "mission_profile": "2v2 BFM transitioning to 4v4 ACM",
+    "weather_brief": "VMC, winds 270/15, ceiling unlimited",
+    "divert_bases": ["Creech AFB", "Tonopah Test Range"],
+    "tanker_support": "None required",
+    "range_clearance": "NTTR-2024-0115-14",
+    "base_location": "Nellis AFB",
+    "debrief_time": "2024-01-15T16:30:00Z",
+    "mission_effectiveness": "pending_debrief"
+  },
+  {
+    "item_id": "SORTIE-A10-20240115-02",
+    "item_type": "close_air_support",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T09:00:00Z",
+    "mission_number": "DM-24-0567",
+    "mission_type": "cas_training",
+    "squadron": "357th Fighter Squadron",
+    "flight_lead": "Lt Col Anderson, James P.",
+    "flight_lead_callsign": "Hawg 11",
+    "aircraft": [
+      {
+        "tail_number": "79-0189",
+        "type": "A-10C",
+        "callsign": "Hawg 11",
+        "pilot": "Lt Col Anderson, James P.",
+        "pilot_hours_a10": 3456,
+        "fuel_load": 11000,
+        "configuration": "6x Mk-82, 2x AGM-65, GAU-8 1150 rounds"
+      },
+      {
+        "tail_number": "79-0197",
+        "type": "A-10C",
+        "callsign": "Hawg 12",
+        "pilot": "Maj Taylor, Patricia K.",
+        "pilot_hours_a10": 2111,
+        "fuel_load": 11000,
+        "configuration": "4x GBU-12, 2x AGM-65, GAU-8 1150 rounds"
+      }
+    ],
+    "takeoff_time": "2024-01-15T09:30:00Z",
+    "landing_time": "2024-01-15T11:30:00Z",
+    "flight_duration": "2.0 hours",
+    "operating_area": "Goldwater Range",
+    "jtac_callsign": "Tombstone 31",
+    "supported_unit": "3rd Battalion, 5th Marines (simulated)",
+    "ordnance_expended": {
+      "Mk-82": 4,
+      "GAU-8_rounds": 450,
+      "marking_rockets": 8
+    },
+    "battle_damage_assessment": "8 targets destroyed, 3 damaged",
+    "weather_conditions": "CAVU",
+    "base_location": "Davis-Monthan AFB",
+    "fuel_remaining_avg": 3500,
+    "mission_success_criteria": "Met all training objectives"
+  },
+  {
+    "item_id": "SORTIE-F22-20240115-03",
+    "item_type": "air_sovereignty",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T06:00:00Z",
+    "mission_number": "AS-24-0089",
+    "mission_type": "homeland_defense_alert",
+    "squadron": "27th Fighter Squadron",
+    "alert_status": "immediate_launch",
+    "scramble_time": "2024-01-15T06:03:00Z",
+    "aircraft": [
+      {
+        "tail_number": "05-4093",
+        "type": "F-22A",
+        "callsign": "Raptor 21",
+        "pilot": "Maj Chen, David L.",
+        "pilot_hours_f22": 1567,
+        "fuel_load": 18000,
+        "configuration": "6x AIM-120D, 2x AIM-9X, Full internal fuel"
+      },
+      {
+        "tail_number": "05-4094",
+        "type": "F-22A",
+        "callsign": "Raptor 22",
+        "pilot": "Capt Rodriguez, Maria S.",
+        "pilot_hours_f22": 743,
+        "fuel_load": 18000,
+        "configuration": "6x AIM-120D, 2x AIM-9X, Full internal fuel"
+      }
+    ],
+    "vector_authority": "NORAD CONR",
+    "intercept_location": "150nm SE of Norfolk",
+    "target_info": "Unknown track, heading 270, FL350, 450kts",
+    "intercept_time": "2024-01-15T06:45:00Z",
+    "identification": "Russian Tu-142 Maritime Patrol",
+    "escort_duration": "45 minutes",
+    "handoff_to": "Canadian NORAD Region",
+    "landing_time": "2024-01-15T08:00:00Z",
+    "base_location": "Langley AFB",
+    "fuel_state_rtb": "8500 lbs average",
+    "debrief_classification": "UNCLASSIFIED"
+  },
+  {
+    "item_id": "SORTIE-MULTI-20240115-04",
+    "item_type": "large_force_exercise",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T10:00:00Z",
+    "exercise_name": "RED FLAG 24-1",
+    "mission_number": "RF-24-1-015",
+    "mission_commander": "Col Mitchell, Steven A.",
+    "blue_forces": {
+      "fighters": 24,
+      "tankers": 2,
+      "awacs": 1,
+      "aggressors": 8
+    },
+    "participating_units": [
+      "34th FS (F-16C)",
+      "27th FS (F-22A)",
+      "492nd FS (F-15E)",
+      "64th AGRS (F-16C)",
+      "965th AACS (E-3C)",
+      "91st ARS (KC-135R)"
+    ],
+    "scenario": "Contested airspace penetration with SEAD/DEAD",
+    "primary_targets": [
+      "Simulated SA-20 site",
+      "Mock airfield complex",
+      "Communications nodes"
+    ],
+    "launch_sequence_start": "2024-01-15T10:00:00Z",
+    "launch_sequence_complete": "2024-01-15T10:45:00Z",
+    "vul_time_start": "2024-01-15T11:00:00Z",
+    "vul_time_end": "2024-01-15T12:30:00Z",
+    "recovery_start": "2024-01-15T12:45:00Z",
+    "recovery_complete": "2024-01-15T13:30:00Z",
+    "airspace_coord": "Nevada Test and Training Range",
+    "attrition": {
+      "blue_losses": 3,
+      "red_losses": 5
+    },
+    "mission_objectives_met": "17 of 20",
+    "base_location": "Nellis AFB"
+  },
+  {
+    "item_id": "SORTIE-HELO-20240115-05",
+    "item_type": "combat_search_rescue",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T16:00:00Z",
+    "mission_number": "PR-24-0023",
+    "mission_type": "personnel_recovery_exercise",
+    "unit": "66th Rescue Squadron",
+    "package_commander": "Lt Col Brown, Jennifer M.",
+    "aircraft": [
+      {
+        "tail_number": "14-20439",
+        "type": "HH-60W",
+        "callsign": "Jolly 41",
+        "pilot": "Maj Wilson, Thomas R.",
+        "copilot": "Capt Lee, Kevin S.",
+        "crew": ["TSgt Miller", "SSgt Davis", "SrA Johnson", "SrA Smith"],
+        "fuel_load": 4800,
+        "configuration": "2x .50 cal, hoist, FLIR"
+      },
+      {
+        "tail_number": "14-20440",
+        "type": "HH-60W",
+        "callsign": "Jolly 42",
+        "pilot": "Capt Martinez, Jose L.",
+        "copilot": "1st Lt Thompson, Amy C.",
+        "crew": ["MSgt Anderson", "TSgt Garcia", "SSgt White", "SrA Brown"],
+        "fuel_load": 4800,
+        "configuration": "2x .50 cal, hoist, FLIR"
+      }
+    ],
+    "supporting_aircraft": [
+      {
+        "type": "A-10C",
+        "callsign": "Sandy 01",
+        "role": "RESCORT"
+      },
+      {
+        "type": "HC-130J",
+        "callsign": "King 31",
+        "role": "Command and Control / Tanker"
+      }
+    ],
+    "survivor_location": "N36°15.234' W115°45.678'",
+    "survivor_callsign": "Dodge 21",
+    "authentication": "Successful",
+    "threats_area": "Small arms, simulated MANPADs",
+    "pickup_time": "2024-01-15T17:23:00Z",
+    "rtb_time": "2024-01-15T18:00:00Z",
+    "survivor_condition": "Ambulatory",
+    "base_location": "Nellis AFB",
+    "fuel_expended": 3200,
+    "mission_success": "Successful recovery"
+  }
+]

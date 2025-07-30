@@ -1,0 +1,157 @@
+[
+  {
+    "item_id": "LOG-2024-001",
+    "item_type": "supply_request",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T09:00:00Z",
+    "supply_category": "aircraft_parts",
+    "urgency": "routine",
+    "requested_by": "34th Fighter Squadron",
+    "requester_poc": "Capt Miller, Jason T.",
+    "requester_phone": "DSN 682-5555",
+    "items": [
+      {
+        "nsn": "1560-01-234-5678",
+        "part_number": "16C1234-805",
+        "description": "ACTUATOR ASSY, FLIGHT CONTROL",
+        "quantity_requested": 2,
+        "unit_of_measure": "each",
+        "unit_cost": 8750.00,
+        "justification": "Scheduled replacement for tail numbers 87-0294, 87-0332"
+      },
+      {
+        "nsn": "2840-01-345-6789",
+        "part_number": "ENG-4421B",
+        "description": "FILTER, ENGINE OIL",
+        "quantity_requested": 50,
+        "unit_of_measure": "each",
+        "unit_cost": 125.00,
+        "justification": "Replenish squadron maintenance stock"
+      }
+    ],
+    "total_cost": 23750.00,
+    "supply_status": "pending_approval",
+    "approval_authority": "34 FW/LG",
+    "base_location": "Holloman AFB",
+    "delivery_location": "Building 301, Supply Dock B",
+    "required_delivery_date": "2024-02-01T00:00:00Z",
+    "fund_cite": "57 3400 2024 BA01 667890 S92300 661153",
+    "priority_code": "03",
+    "project_code": "XF16C"
+  },
+  {
+    "item_id": "LOG-2024-002",
+    "item_type": "fuel_request",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "fuel_type": "JP-8",
+    "quantity_requested": 50000,
+    "unit_of_measure": "gallons",
+    "unit_cost": 3.85,
+    "total_cost": 192500.00,
+    "requested_by": "355th Wing",
+    "requester_poc": "MSgt Thompson, Linda K.",
+    "requester_phone": "DSN 228-6789",
+    "justification": "Monthly fuel allocation for flying operations",
+    "delivery_date": "2024-01-20T00:00:00Z",
+    "delivery_method": "pipeline",
+    "storage_facility": "Tank Farm Alpha",
+    "base_location": "Davis-Monthan AFB",
+    "contract_number": "FA4877-23-D-0012",
+    "quality_specs": "MIL-DTL-83133",
+    "supply_status": "approved",
+    "approval_date": "2024-01-15T14:00:00Z",
+    "approved_by": "Lt Col Sanders, Mark D."
+  },
+  {
+    "item_id": "LOG-2024-003",
+    "item_type": "munitions_movement",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T07:00:00Z",
+    "munition_type": "training_ordnance",
+    "items": [
+      {
+        "dodic": "BDU33",
+        "nomenclature": "BOMB, PRACTICE, 25 LB",
+        "quantity": 200,
+        "lot_number": "LOT-2023-447"
+      },
+      {
+        "dodic": "BDU50",
+        "nomenclature": "BOMB, PRACTICE, LGTR, 500 LB",
+        "quantity": 48,
+        "lot_number": "LOT-2023-221"
+      }
+    ],
+    "from_location": "Munitions Storage Area 2",
+    "to_location": "Flight Line Munitions Holding",
+    "transport_method": "munitions_trailer",
+    "transport_vehicle": "MHU-141",
+    "escort_required": true,
+    "escort_personnel": ["SrA Johnson, Keith M.", "A1C Williams, Ashley R."],
+    "movement_start": "2024-01-15T07:30:00Z",
+    "movement_complete": "2024-01-15T08:15:00Z",
+    "base_location": "Nellis AFB",
+    "authorization_number": "MASO-2024-0115-001",
+    "safety_inspection": "completed",
+    "net_explosive_weight": "5200 lbs"
+  },
+  {
+    "item_id": "LOG-2024-004",
+    "item_type": "equipment_transfer",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T11:00:00Z",
+    "equipment_category": "age_equipment",
+    "items": [
+      {
+        "nomenclature": "Generator Set, Diesel, 60KW",
+        "model": "MEP-806B",
+        "serial_number": "USN-2019-4521",
+        "condition_code": "A",
+        "hours_operated": 2341
+      },
+      {
+        "nomenclature": "Air Conditioner, Aircraft",
+        "model": "MA-3D",
+        "serial_number": "USAF-2020-8834",
+        "condition_code": "B",
+        "hours_operated": 4521
+      }
+    ],
+    "transfer_from": "49th Wing",
+    "transfer_to": "355th Wing",
+    "from_base": "Holloman AFB",
+    "to_base": "Davis-Monthan AFB",
+    "transfer_reason": "Unit deactivation and redistribution",
+    "transportation_method": "C-130 airlift",
+    "shipment_tracking": "TCN-X4B7K9",
+    "estimated_arrival": "2024-01-17T14:00:00Z",
+    "transfer_authority": "AFMC/A4",
+    "documentation": ["DD Form 1348-1A", "AF Form 2005"],
+    "total_value": 284000.00
+  },
+  {
+    "item_id": "LOG-2024-005",
+    "item_type": "hazmat_shipment",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T13:00:00Z",
+    "hazmat_class": "3",
+    "un_number": "UN1863",
+    "proper_shipping_name": "FUEL, AVIATION, TURBINE ENGINE",
+    "packing_group": "III",
+    "quantity": 5,
+    "unit_of_measure": "drums_55gal",
+    "emergency_contact": "CHEMTREC 1-800-424-9300",
+    "shipper": "DLA Energy",
+    "receiver": "99th LRS",
+    "origin": "Defense Fuel Supply Point San Pedro",
+    "destination": "Nellis AFB",
+    "carrier": "Contract Carrier - Smith Transport",
+    "vehicle_placards": ["FLAMMABLE LIQUID 3", "UN1863"],
+    "driver_certified": true,
+    "driver_name": "Johnson, Robert L.",
+    "estimated_delivery": "2024-01-16T10:00:00Z",
+    "special_instructions": "Store in flammables locker upon receipt",
+    "msds_on_file": true
+  }
+]

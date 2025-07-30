@@ -1,0 +1,250 @@
+[
+  {
+    "item_id": "DEPLOY-2024-ALFA-001",
+    "item_type": "personnel_deployment",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T08:00:00Z",
+    "deployment_name": "Operation DESERT GUARDIAN",
+    "deployment_order": "DEPORD-24-0123",
+    "deploying_unit": "34th Fighter Squadron",
+    "home_station": "Holloman AFB",
+    "deployed_location": "Al Udeid AB, Qatar",
+    "deployment_start_date": "2024-02-01T00:00:00Z",
+    "deployment_end_date": "2024-08-01T00:00:00Z",
+    "deployment_duration": "6 months",
+    "personnel_count": 185,
+    "personnel_breakdown": {
+      "officers": 28,
+      "enlisted": 157,
+      "pilots": 20,
+      "maintenance": 95,
+      "support": 70
+    },
+    "key_personnel": {
+      "commander": "Lt Col Harrison, James A.",
+      "operations_officer": "Maj Wilson, Sarah K.",
+      "maintenance_officer": "Maj Thompson, Robert L.",
+      "first_sergeant": "MSgt Davis, Michael J."
+    },
+    "aircraft_deploying": 12,
+    "aircraft_type": "F-16C/D",
+    "support_equipment": "3x cargo pallets AGE",
+    "airlift_required": {
+      "pax_missions": 2,
+      "cargo_missions": 4,
+      "tanker_support": "Required for fighter movement"
+    },
+    "pre_deployment_training": "Complete",
+    "medical_clearance": "98% complete",
+    "security_clearances": "Current",
+    "family_support_plan": "Activated",
+    "rear_detachment_size": 15
+  },
+  {
+    "item_id": "DEPLOY-2024-BRAVO-002",
+    "item_type": "equipment_deployment",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T10:00:00Z",
+    "deployment_type": "theater_security_package",
+    "equipment_set": "Patriot Battery",
+    "unit": "3rd Battalion, 43rd Air Defense Artillery",
+    "home_station": "Fort Sill, OK",
+    "deployment_location": "Kadena AB, Japan",
+    "deployment_window": "2024-01-20 to 2024-01-25",
+    "equipment_manifest": [
+      {
+        "nomenclature": "Patriot Radar Set",
+        "model": "AN/MPQ-65",
+        "quantity": 1,
+        "serial": "US-PAT-2019-065"
+      },
+      {
+        "nomenclature": "Engagement Control Station",
+        "model": "AN/MSQ-104",
+        "quantity": 1,
+        "serial": "US-ECS-2019-104"
+      },
+      {
+        "nomenclature": "Launching Station",
+        "model": "M901",
+        "quantity": 8,
+        "serial_range": "US-LS-2019-001 to 008"
+      },
+      {
+        "nomenclature": "Antenna Mast Group",
+        "model": "OE-349",
+        "quantity": 1,
+        "serial": "US-AMG-2019-349"
+      },
+      {
+        "nomenclature": "Power Plant",
+        "model": "EPP-III",
+        "quantity": 2,
+        "serial_range": "US-EPP-2019-001 to 002"
+      }
+    ],
+    "transportation_method": "C-17 strategic airlift",
+    "required_sorties": 6,
+    "hazmat_cargo": "Yes - missile propellant",
+    "special_handling": "Classified components require constant guard",
+    "setup_time_estimate": "72 hours after arrival",
+    "support_personnel": 45,
+    "coordination_cell": "PACAF A4"
+  },
+  {
+    "item_id": "DEPLOY-2024-CHARLIE-003",
+    "item_type": "humanitarian_deployment",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T12:00:00Z",
+    "operation_name": "PACIFIC ANGEL 24-1",
+    "mission_type": "humanitarian_civic_assistance",
+    "lead_unit": "36th Medical Group",
+    "supporting_units": ["18th Civil Engineer Squadron", "15th Airlift Squadron"],
+    "deployment_location": "Philippines - Multiple Sites",
+    "duration": "14 days",
+    "start_date": "2024-02-15T00:00:00Z",
+    "end_date": "2024-02-29T00:00:00Z",
+    "personnel_deploying": 85,
+    "medical_capabilities": [
+      "Primary care",
+      "Dental",
+      "Optometry",
+      "Preventive medicine",
+      "Pediatrics"
+    ],
+    "engineering_projects": [
+      "School renovation - 2 sites",
+      "Water well drilling - 3 sites",
+      "Medical clinic construction - 1 site"
+    ],
+    "equipment_deploying": {
+      "medical_pallets": 8,
+      "dental_units_portable": 4,
+      "construction_equipment": "Light engineering package",
+      "water_purification": "2x ROWPU"
+    },
+    "estimated_patients": 3500,
+    "coordination": {
+      "us_embassy_poc": "Maj Smith, Defense Attaché Office",
+      "host_nation_poc": "Col Santos, Philippine Air Force",
+      "ngo_partners": ["Red Cross", "USAID", "Local health ministry"]
+    },
+    "logistics_hub": "Clark AB, Philippines",
+    "comms_plan": "SIPR and NIPR connectivity required"
+  },
+  {
+    "item_id": "DEPLOY-2024-DELTA-004",
+    "item_type": "exercise_deployment",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T14:00:00Z",
+    "exercise_name": "COPE NORTH 2024",
+    "exercise_type": "multilateral_air_combat",
+    "participating_nations": ["USA", "Japan", "Australia"],
+    "us_units_deploying": [
+      {
+        "unit": "44th Fighter Squadron",
+        "aircraft": "F-15C",
+        "quantity": 8,
+        "personnel": 120,
+        "home_base": "Kadena AB"
+      },
+      {
+        "unit": "909th Air Refueling Squadron",
+        "aircraft": "KC-135R",
+        "quantity": 2,
+        "personnel": 35,
+        "home_base": "Kadena AB"
+      },
+      {
+        "unit": "961st AACS",
+        "aircraft": "E-3C AWACS",
+        "quantity": 1,
+        "personnel": 45,
+        "home_base": "Kadena AB"
+      }
+    ],
+    "exercise_location": "Andersen AFB, Guam",
+    "exercise_dates": {
+      "deployment": "2024-02-05T00:00:00Z",
+      "exercise_start": "2024-02-08T00:00:00Z",
+      "exercise_end": "2024-02-23T00:00:00Z",
+      "redeployment": "2024-02-25T00:00:00Z"
+    },
+    "training_objectives": [
+      "Air superiority operations",
+      "Dissimilar air combat training",
+      "Large force employment",
+      "ACE concept validation"
+    ],
+    "logistics_requirements": {
+      "munitions": "Training ordnance only",
+      "fuel": "1.2M gallons JP-8",
+      "maintenance": "Phase dock capability required"
+    },
+    "command_structure": {
+      "exercise_director": "Brig Gen Mitchell, PACAF",
+      "us_component_commander": "Col Anderson, 44th FS",
+      "combined_air_ops_center": "Andersen AFB"
+    }
+  },
+  {
+    "item_id": "DEPLOY-2024-ECHO-005",
+    "item_type": "emergency_deployment",
+    "classification_marking": "UNCLASSIFIED",
+    "timestamp": "2024-01-15T16:00:00Z",
+    "emergency_type": "natural_disaster_response",
+    "disaster_info": {
+      "type": "earthquake",
+      "magnitude": 7.2,
+      "location": "Southern Turkey",
+      "date": "2024-01-14T23:47:00Z"
+    },
+    "response_package": "USAF Disaster Response Team",
+    "deploying_units": [
+      {
+        "unit": "621st Contingency Response Wing",
+        "specialty": "Airfield assessment and opening",
+        "personnel": 45,
+        "home_station": "Travis AFB"
+      },
+      {
+        "unit": "437th Airlift Wing",
+        "aircraft": "C-17A",
+        "missions": "Heavy airlift support",
+        "home_station": "Charleston AFB"
+      },
+      {
+        "unit": "86th Medical Group",
+        "specialty": "EMEDS package",
+        "personnel": 35,
+        "home_station": "Ramstein AB"
+      }
+    ],
+    "immediate_needs": [
+      "Search and rescue",
+      "Medical treatment",
+      "Shelter and blankets",
+      "Water purification",
+      "Power generation"
+    ],
+    "staging_base": "Incirlik AB, Turkey",
+    "estimated_deployment_duration": "30-45 days",
+    "cargo_manifest": {
+      "medical_supplies": "15 pallets",
+      "shelters": "200 units",
+      "generators": "10x 60KW",
+      "water_purification": "4x ROWPU units",
+      "mres": "50,000 meals"
+    },
+    "coordination_elements": {
+      "us_embassy": "Activated",
+      "host_nation": "Turkish Ministry of Defense",
+      "international_orgs": ["UN OCHA", "Red Crescent", "WHO"]
+    },
+    "deployment_timeline": {
+      "alert": "2024-01-15T02:00:00Z",
+      "wheels_up_first": "2024-01-15T18:00:00Z",
+      "initial_capability": "2024-01-16T12:00:00Z"
+    }
+  }
+]
