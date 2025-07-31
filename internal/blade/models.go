@@ -3,12 +3,10 @@ package blade
 type BLADEDataMapping struct {
 	DataType    string `json:"dataType"` // BLADE data type
 	TableName   string `json:"tableName"` // corresponding Databricks table name
-	SourcePath  string `json:"sourcePath"` // mock path for POC (not real files)
+	SourcePath  string `json:"sourcePath"` // mock source path for POC (not a real data path)
 	Description string `json:"description"`
 }
 
-// func => return the standard BLADE data type mappings
-// uses mock source paths
 func GetBLADEMappings() []BLADEDataMapping {
 	return []BLADEDataMapping{
 		{
