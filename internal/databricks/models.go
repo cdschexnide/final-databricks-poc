@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// Encapsulates all parameters needed for a data ingestion operation.
 type IngestionRequest struct {
 	TableName     string            `json:"tableName"`
 	SourcePath    string            `json:"sourcePath"`
@@ -15,6 +16,7 @@ type IngestionRequest struct {
 	Metadata      map[string]string `json:"metadata"`
 }
 
+// Contains the results and statistics from a completed ingestion operation.
 type IngestionResult struct {
 	RowsIngested int64 `json:"rowsIngested"`
 	Duration time.Duration `json:"duration"`
@@ -24,12 +26,13 @@ type IngestionResult struct {
 	Metadata map[string]interface{} `json:"metadata"`
 }
 
-
+// Convenience method for serializing results to JSON.
 func (r *IngestionResult) ToJSON() []byte {
 	data, _ := json.Marshal(r)
 	return data
 }
 
+// Type-safe constants for BLADE data types.
 type BLADEDataType string
 
 const (

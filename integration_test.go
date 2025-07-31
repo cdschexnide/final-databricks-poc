@@ -1,5 +1,8 @@
 package main
 
+//   Test Package: Uses package main to test the main application
+//   Standard Testing: testing package for Go test framework
+//   Internal Dependencies: All three core packages for end-to-end testing
 import (
 	"context"
 	"os"
@@ -11,11 +14,12 @@ import (
 	"databricks-blade-poc/internal/databricks"
 )
 
-// tests all combinations of BLADE data types and formats
+// Purpose: Tests all 8 combinations of BLADE data types and formats from the mock data
 func TestBLADEIngestionIntegration(t *testing.T) {
-	if os.Getenv("CI") != "" {
-		t.Skip("Skipping integration tests in CI environment")
-	}
+	// Configuration Validation:
+	// - Loads environment-based configuration
+	// - Skips tests if required Databricks credentials are missing
+	// - Creates and tests Databricks client connection
 
 	cfg, err := config.LoadConfig()
 	if err != nil {
@@ -36,6 +40,15 @@ func TestBLADEIngestionIntegration(t *testing.T) {
 		t.Fatalf("Failed to connect to Databricks: %v", err)
 	}
 
+	// Complete Coverage Matrix:
+	// - 4 Data Types: maintenance, sortie, deployment, logistics
+	// - 2 Formats: JSON, CSV
+	// - 8 Total Combinations: Every possible input combination
+
+	// Subtest Execution:
+	// - Each combination runs as a separate subtest
+	// - Parallel execution possible
+	// - Individual test result reporting
 	bladeAdapter := blade.NewBLADEAdapter(cfg.BLADEDataSource, cfg.BLADEDataPath)
 
 	testCases := []struct {
@@ -59,6 +72,14 @@ func TestBLADEIngestionIntegration(t *testing.T) {
 		})
 	}
 }
+
+//   Three-Phase Testing:
+//   1. Request Preparation: Tests BLADE adapter functionality
+//   2. Request Validation (validateIngestionRequest): Validates request structure and content
+//   3. Ingestion Execution: Tests Databricks operations
+//   4. Result Validation (validateIngestionResult): Validates response structure and metrics
+
+//   Timing Measurement: Tracks test execution time for performance monitoring
 
 func testBLADEIngestion(t *testing.T, adapter *blade.BLADEAdapter, client *databricks.Client, dataType, format string) {
 	ctx := context.Background()
@@ -85,6 +106,12 @@ func testBLADEIngestion(t *testing.T, adapter *blade.BLADEAdapter, client *datab
 }
 
 func validateIngestionRequest(t *testing.T, req *databricks.IngestionRequest, dataType, format string) {
+	// Comprehensive Request Validation:
+
+	// Structural Validation:
+	// - Request object is not nil
+	// - All required fields are populated
+	// - No empty critical values
 	if req == nil {
 		t.Fatal("Ingestion request is nil")
 	}
@@ -109,6 +136,10 @@ func validateIngestionRequest(t *testing.T, req *databricks.IngestionRequest, da
 		t.Error("Metadata is nil")
 	}
 
+	// Content Consistency:
+	// - Metadata data_type matches input parameter
+	// - Metadata original_format matches input parameter
+	// - SampleData is populated for mock mode
 	expectedMetadata := []string{"source_system", "data_type", "integration", "description", "mode", "original_format"}
 	for _, field := range expectedMetadata {
 		if _, exists := req.Metadata[field]; !exists {
@@ -126,6 +157,13 @@ func validateIngestionRequest(t *testing.T, req *databricks.IngestionRequest, da
 }
 
 func validateIngestionResult(t *testing.T, result *databricks.IngestionResult, dataType, format string, startTime time.Time) {
+	// Result Quality Checks:
+
+	// Success Indicators:
+	// - Status is "completed"
+	// - No error field present
+	// - Positive row count
+	// - Reasonable execution duration
 	if result == nil {
 		t.Fatal("Ingestion result is nil")
 	}
@@ -154,10 +192,15 @@ func validateIngestionResult(t *testing.T, result *databricks.IngestionResult, d
 		t.Error("Result metadata is nil")
 	}
 
+	// Performance Validation
 	if result.Duration < time.Millisecond {
 		t.Errorf("Ingestion completed suspiciously fast: %v", result.Duration)
 	}
 
+	// Data Integrity:
+	// - Row count is positive
+	// - Duration is reasonable (not too fast/slow)
+	// - Metadata is populated
 	if time.Since(startTime) < result.Duration {
 		t.Logf("Warning: Result duration (%v) seems longer than actual time elapsed (%v)", 
 			result.Duration, time.Since(startTime))
@@ -165,6 +208,10 @@ func validateIngestionResult(t *testing.T, result *databricks.IngestionResult, d
 }
 
 func TestBLADEAdapterMappings(t *testing.T) {
+	// Configuration Validation:
+	// - Tests adapter initialization
+	// - Validates all expected data types are supported
+	// - Ensures no missing or extra data types
 	cfg, err := config.LoadConfig()
 	if err != nil {
 		t.Fatalf("Failed to load configuration: %v", err)
@@ -191,6 +238,11 @@ func TestBLADEAdapterMappings(t *testing.T) {
 	}
 }
 
+// Error Handling Tests
+//   Negative Testing:
+//   - Tests invalid data type handling
+//   - Tests invalid format handling
+//   - Ensures proper error responses for bad inputs
 func TestInvalidDataType(t *testing.T) {
 	cfg, err := config.LoadConfig()
 	if err != nil {
@@ -219,6 +271,12 @@ func TestInvalidFormat(t *testing.T) {
 	}
 }
 
+// Performance Benchmarking Tests
+//   Performance Testing:
+//   - Benchmarks complete ingestion workflow
+//   - Measures operations per second
+//   - Excludes setup time with b.ResetTimer()
+//   - Runs multiple iterations for statistical accuracy
 func BenchmarkBLADEIngestion(b *testing.B) {
 	if os.Getenv("CI") != "" {
 		b.Skip("Skipping benchmark tests in CI environment")
